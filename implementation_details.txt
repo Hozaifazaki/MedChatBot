@@ -12,4 +12,7 @@
 
 ------
 Connect your API file (swagger.yaml) to your Flask Application using (Connexion)
-1- Update the app.py 
+
+--------------
+Pip resolver
+!pip install -r requirements.txt --use-deprecated=legacy-resolver
