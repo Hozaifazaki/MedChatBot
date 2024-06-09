@@ -1,0 +1,15 @@
+1- Create enviroment
+     python -m venv flask_env
+2- Activate the enviroment
+    .\flask_env\Scripts\activate
+3- Install dependcies
+    python -m pip install flask==2.2.2
+    python -m pip install "connexion[swagger-ui]==2.14.1"
+4- Create app.py
+5- Create home.html
+6- Run
+    python .\app.py
+
+------
+Connect your API file (swagger.yaml) to your Flask Application using (Connexion)
+1- Update the app.py 
