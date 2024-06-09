@@ -70,3 +70,31 @@ paths:
       responses:
         "200":
           description: "Successfully retrived one perosn"
+    
+    put:
+      operationId: "people.update"
+      tags:
+        - "People"
+      summary: "Update information of existing person"
+      parameters:
+        - $ref: "#/components/parameters/lname"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "person"
+              $ref: "#/components/schemas/Person"
+      responses:
+        "200":
+          description: "Successfully updated person"
+    
+    delete:
+      operationId: "people.delete"
+      tags:
+        - "People"
+      summary: "Delete a person"
+      parameters:
+        - $ref: "#/components/parameters/lname"
+      responses:
+        "204":
+          description: "Successfully removed a person"
