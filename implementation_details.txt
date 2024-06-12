@@ -3,6 +3,7 @@
 2- Activate the enviroment
     .\flask_env\Scripts\activate
 3- Install dependcies
+    python -m pip install "flask-marshmallow[sqlalchemy]==0.14.0"
     python -m pip install flask==2.2.2
     python -m pip install "connexion[swagger-ui]==2.14.1"
 4- Create app.py
@@ -16,3 +17,8 @@ Connect your API file (swagger.yaml) to your Flask Application using (Connexion)
 --------------
 Pip resolver
 !pip install -r requirements.txt --use-deprecated=legacy-resolver
+
+-------------
+Remove all packages on venv
+- pip freeze > requirements.txt
+- pip uninstall -r requirements.txt
